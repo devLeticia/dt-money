@@ -23,6 +23,22 @@
       "category": "Alimentação",
       "price": 1980,
       "createdAt": "2023-03-23T00:08:48.054Z"
+    },
+    {
+      "description": "Vestido",
+      "category": "Roupas",
+      "price": 50,
+      "type": "outcome",
+      "createdAt": "2023-03-27T23:38:13.649Z",
+      "id": 4
+    },
+    {
+      "description": "Chamyto",
+      "category": "Alimentação",
+      "price": 5,
+      "type": "income",
+      "createdAt": "2023-03-28T00:06:35.981Z",
+      "id": 5
     }
   ]
 }
