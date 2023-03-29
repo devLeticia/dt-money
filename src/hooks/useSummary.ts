@@ -1,11 +1,13 @@
 // instead of having this long function inside Summary component
 
-import { useContext } from 'react'
+import { useContextSelector } from 'use-context-selector'
 import { TransactionsContext } from '../contexts/TransactionsContex'
 
 // we put it in a hook
 export function useSummary() {
-  const { transactions } = useContext(TransactionsContext)
+  const transactions = useContextSelector(TransactionsContext, (context) => {
+    return context.transactions
+  })
 
   //acc is the transaction object, we can change it's property in each iteration
   const summary = transactions.reduce(
